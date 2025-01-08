@@ -1,0 +1,24 @@
+div.error-page {
+    padding-top: 100px;
+    text-align: center;
+
+    p {
+        @include contentH2();
+        margin-bottom: 30px;
+        font-size: 26px;
+        border-bottom: none;
+    }
+
+
+
+    button {
+        @include btn ();
+
+        &:hover {
+
+            a {
+                color: white;
+            }
+        }
+    }
+}

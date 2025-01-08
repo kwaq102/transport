@@ -1,0 +1,42 @@
+@mixin btn() {
+    border: none;
+    border-radius: 5px;
+    background: linear-gradient(180deg, rgba(105, 96, 89, 1) 0%, rgba(66, 61, 56, 1) 100%);
+
+    a {
+        display: block;
+        padding: 10px 15px;
+        font-family: 'Francois One', sans-serif;
+        text-transform: uppercase;
+        text-decoration: none;
+        color: #8F8379;
+        font-style: italic;
+        transition: .2s;
+    }
+}
+
+@mixin contentH2() {
+    padding-bottom: 5px;
+    border-bottom: 1px dotted $primary-color;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-style: italic;
+}
+
+@mixin contentH5() {
+    margin: 20px 0;
+    font-size: 14px;
+    font-weight: normal;
+}
+
+@mixin article() {
+    width: 80%;
+    font-size: 12px;
+    color: #998D7A;
+    line-height: 150%;
+
+    @media (max-width: 768px) {
+        width: 100%;
+        text-align: justify;
+    }
+}

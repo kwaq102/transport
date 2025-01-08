@@ -1,0 +1,39 @@
+section.price{
+    h2{
+        @include contentH2();
+    span {
+         color: $primary-color;   
+        }
+    }
+
+    h5{
+        @include contentH5();
+    }
+
+    p{
+        @include article();
+    }
+
+    ul{
+        padding: 10px 0 10px 30px;
+        color: $primary-color;
+        
+        li{
+            font-size: 12px;
+            font-style: italic;
+        }
+    }
+
+    .btn{
+        margin-top: 30px;
+
+        @include btn();
+
+        &:hover{
+
+            a{
+                color: white;
+            }
+        }
+    }
+}

@@ -1,0 +1,34 @@
+section.content {
+    width: 900px;
+    height: 550px;
+    position: relative;
+    top: 45%;
+    left: 50%;
+    padding: 20px;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.85);
+
+}
+
+@media (max-width: 1024px) {
+    section.content {
+        width: 90%;
+    }
+}
+
+@media (max-width: 768px) {
+    section.content {
+        height: 600px;
+        top: 50px;
+        padding: 20px;
+        transform: translate(-50%, 0);
+    }
+
+    section.content.offer {
+        height: 650px;
+    }
+
+    section.content.offer {
+        height: 700px;
+    }
+}

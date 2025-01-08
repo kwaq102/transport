@@ -1,0 +1,36 @@
+section.about{
+    .about-content{
+
+        h2{
+            @include contentH2();
+
+            span{
+                color: $primary-color;
+            }
+        }
+        h5{
+           @include contentH5();
+        }
+
+        p{
+            margin-top: 5px;
+           @include article();
+
+            strong{
+                font-weight: normal;
+            }
+        }
+
+        .btn{
+            margin-top: 30px;
+            @include btn();            
+
+            &:hover{
+
+                a{
+                    color: white;
+                }
+            }
+        }
+    }
+}

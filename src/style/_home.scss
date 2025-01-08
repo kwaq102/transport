@@ -1,0 +1,99 @@
+.home {
+    position: relative;
+    top: 170px;
+    left: calc(100% - 600px);
+    width: 450px;
+    height: 220px;
+    background-color: rgba(0, 0, 0, 0.8);
+
+    .home-content {
+        padding: 20px;
+
+        h1 {
+            width: 90%;
+            font-size: 36px;
+            font-weight: bold;
+            text-transform: uppercase;
+            border-bottom: 1px dotted $primary-color;
+
+            span {
+                color: $primary-color;
+                font-size: 26px;
+            }
+        }
+
+        h2 {
+            margin-top: 10px;
+            font-size: 14px;
+            font-weight: 400;
+            text-align: center;
+            color: $primary-color;
+        }
+
+        p {
+            margin: 10px 0;
+            text-transform: uppercase;
+            font-size: 24px;
+            text-align: center;
+            font-style: italic;
+            font-family: 'Francois One', sans-serif;
+            letter-spacing: 1px;
+        }
+
+
+        .home-contact {
+
+            button {
+                display: block;
+                width: 180px;
+                margin: 0 0 0 auto;
+                padding: 5px 10px;
+                background-color: transparent;
+
+                border: 1px solid $primary-color;
+                border-radius: 5px;
+                text-transform: uppercase;
+                cursor: pointer;
+                transition: .2s;
+                outline: none;
+
+                a {
+                    font-size: 18px;
+                    font-family: 'Francois One', sans-serif;
+                    color: white;
+                    text-decoration: none;
+                }
+
+                &:hover {
+                    border: 1px solid transparent;
+                    background-color: #423D38;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .home {
+        height: 350px;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        .home-content {
+            height: 100%;
+            padding: 40px 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            text-align: center;
+
+            .home-contact {
+                button {
+                    margin: 20px auto 0 auto;
+                }
+            }
+        }
+
+    }
+}

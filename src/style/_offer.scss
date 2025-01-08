@@ -1,0 +1,35 @@
+section.offer {
+    h2 {
+        @include contentH2();
+
+        span {
+            color: $primary-color;
+        }
+    }
+
+    h5 {
+        @include contentH5();
+
+        strong {
+            font-weight: normal;
+        }
+    }
+
+    p {
+        @include article();
+    }
+
+    ul {
+        padding: 10px 0 0 30px;
+        color: $primary-color;
+
+        li {
+            font-size: 12px;
+            font-style: italic;
+        }
+    }
+
+    ul.equipment-list {
+        padding: 0 0 0 30px;
+    }
+}
